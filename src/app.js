@@ -1,10 +1,10 @@
+require("dotenv").config();
 const express = require('express')
 const session = require('express-session')
 const passport = require('passport')
 const { Strategy: GitHubStrategy } = require('passport-github2')
 const partials = require("express-partials");
 const path = require("path");
-require("dotenv").config();
 
 const { ensureAuthenticated, strategy, sessionConfig } = require('./utils');
 const app = express()
